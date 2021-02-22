@@ -1,0 +1,199 @@
+local VLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))()
+local s = VLib:Window("Car Crash Simulator", "Vep Hub :O", "G")
+local ss4 = s:Tab("Credits")
+local ss = s:Tab("Crates")
+local ss1 = s:Tab("Special Cars")
+local ss2 = s:Tab("Premium Cars")
+local ss3 = s:Tab("Group Cars")
+local Event = game:GetService("ReplicatedStorage").Events.spawnCar
+
+
+ss4:Label("Sexy UI by Vep")
+ss4:Label("Shitty Script by xdBeaver")
+
+ss:Button("Money!",function()
+    local A_1 = "Rare"
+    local A_2 = -500000000
+    local Event = game:GetService("ReplicatedStorage").Events.OpenBox
+    Event:InvokeServer(A_1, A_2)
+end)
+
+ss:Toggle("Legendary Crate",function(t)
+getgenv().farm = t
+while wait(1) do
+    if getgenv().farm == true then
+        local A_1 = "Legendary"
+        local A_2 = 0
+        local Event = game:GetService("ReplicatedStorage").Events.OpenBox
+        Event:InvokeServer(A_1, A_2)
+    end
+end
+    end)
+
+ss:Toggle("Rare Crate",function(t)
+getgenv().farm1 = t
+while wait(1) do
+    if getgenv().farm1 == true then
+        local A_1 = "Rare"
+        local A_2 = 0
+        local Event = game:GetService("ReplicatedStorage").Events.OpenBox
+        Event:InvokeServer(A_1, A_2)
+    end
+end
+    end)
+
+ss:Toggle("Uncommon Crate",function(t)
+getgenv().farm2 = t
+while wait(1) do
+    if getgenv().farm2 == true then
+        local A_1 = "Uncommon"
+        local A_2 = 0
+        local Event = game:GetService("ReplicatedStorage").Events.OpenBox
+        Event:InvokeServer(A_1, A_2)
+    end
+end
+    end)
+
+ss:Toggle("Common Crate",function(t)
+getgenv().farm3 = t
+while wait(.5) do
+    if getgenv().farm3 == true then
+        local A_1 = "Common"
+        local A_2 = 0
+        local Event = game:GetService("ReplicatedStorage").Events.OpenBox
+        Event:InvokeServer(A_1, A_2)
+    end
+end
+    end)
+
+ss1:Button("Pumpkin", function()
+    Event:InvokeServer(5758393590)
+end)
+
+ss1:Button("Ram Plow", function()
+    Event:InvokeServer(4962426954)
+end)
+
+ss1:Button("Missile Truck", function()
+    Event:InvokeServer(4962353912)
+end)
+
+ss1:Button("Sleigh", function()
+    Event:InvokeServer(4962459394)
+end)
+
+ss1:Button("Freight Train", function()
+    Event:InvokeServer(4962278848)
+end)
+
+ss1:Button("Mining Truck", function()
+    Event:InvokeServer(5246768785)
+end)
+
+ss1:Button("Thrust", function()
+    Event:InvokeServer(4962481636)
+end)
+
+ss1:Button("Guest", function()
+    Event:InvokeServer(6171392681)
+end)
+
+ss2:Button("Ambulance", function()
+    Event:InvokeServer(4962029720)
+end)
+
+ss2:Button("Double Bus", function()
+    Event:InvokeServer(4962165551)
+end)
+
+ss2:Button("City Bus", function()
+    Event:InvokeServer(4962130107)
+end)
+
+ss2:Button("Fire Truck", function()
+    Event:InvokeServer(4962242272)
+end)
+
+ss2:Button("Steamroller", function()
+    Event:InvokeServer(4962471763)
+end)
+
+ss2:Button("Monster Truck New", function()
+    Event:InvokeServer(4962481636)
+end)
+
+ss2:Button("Gas Tanker", function()
+    Event:InvokeServer(4962309492)
+end)
+
+ss2:Button("Snow Plow New", function()
+    Event:InvokeServer(4962466816)
+end)
+
+ss2:Button("Bulldozer", function()
+    Event:InvokeServer(4962122255)
+end)
+
+ss2:Button("School Bus", function()
+    Event:InvokeServer(4962434270)
+end)
+
+ss2:Button("Semi Truck", function()
+    Event:InvokeServer(4962456844)
+end)
+
+ss2:Button("Tow Truck", function()
+    Event:InvokeServer(4962481636)
+end)
+
+ss2:Button("Train", function()
+    Event:InvokeServer(4962489018)
+end)
+
+ss2:Button("Excavator", function()
+    Event:InvokeServer(5003773686)
+end)
+
+ss2:Button("Tank New", function()
+    Event:InvokeServer(5053572618)
+end)
+
+ss3:Button("Box Truck", function()
+    Event:InvokeServer(4962065731)
+end)
+
+ss3:Button("Dump Truck", function()
+    Event:InvokeServer(4962226681)
+end)
+
+ss3:Button("Snow Plow", function()
+    Event:InvokeServer(4962464564)
+end)
+
+ss3:Button("Limo", function()
+    Event:InvokeServer(4962338974)
+end)
+
+ss3:Button("Monster Truck", function()
+    Event:InvokeServer(4962355384)
+end)
+
+ss3:Button("Rocket Car New", function()
+    Event:InvokeServer(4962429972)
+end)
+
+ss3:Button("Tank", function()
+    Event:InvokeServer(4962476180)
+end)
+
+ss3:Button("Hover Craft", function()
+    Event:InvokeServer(6025324938)
+end)
+
+ss3:Button("Robin", function()
+    Event:InvokeServer(6174042318)
+end)
+
+ss3:Button("Crane Truck", function()
+    Event:InvokeServer(6219913609)
+end)
